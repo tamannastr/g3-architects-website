@@ -30,6 +30,9 @@ nav li a{
     font-size: 2.8rem;
     color:#131313;
 }
+main>section,footer{
+    margin-top: 145px;
+}
 /* banner styles */
 .banner-content{
     max-width: 800px;
@@ -50,5 +53,139 @@ nav li a{
     font-size: 1.25rem;
     font-weight: 600;
     border-radius: 8px;
+    cursor: pointer;
     border: none;
+}
+.banner img{
+    width: 100%;
+}
+/*responsive*/
+@media screen and (max-width:576px) {
+   header{
+    padding:20px;
+   }
+    nav{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:576px) and (max-width:960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+.txt-description{
+    color: #727272;
+}
+.feature-section{
+    margin-top: 145px;
+}
+.feature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.feature-content{
+    margin-left: 130px;
+}
+.feature-content-title{
+    font-size: 1.8rem;
+}
+.feature-ql{
+    font-weight: 500;
+    color:#727272;
+}
+.feature-Features{
+    color: #FF900E;
+}
+.feature-content-description{
+    color: #727272;
+    margin-bottom: 20px;
+}
+/*version styles*/
+.versions{
+    display: flex;
+    gap:140px;
+}
+.versions-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+    font-size: 2rem;
+}
+.versions-type-description{
+    color: #727272;
+}
+.versions-img{
+width: 100%;
+}
+.versions-type{
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.facts-cards-container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+.cards{
+    border: 1px solid #FF900E;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+}
+.card-stats{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.card-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.fact-description{
+    max-width: 540px;
+    color: #727272;
+}
+.sponsors img{
+    filter: grayscale(100%);
+}
+.footer{
+    justify-content: center;
+    align-items: center;
+}
+.footer-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.footer-description{
+    color: #727272;
+}
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+}
+.sponsors-info{
+    max-width: 540px;
+    margin: 50px auto;
 }
